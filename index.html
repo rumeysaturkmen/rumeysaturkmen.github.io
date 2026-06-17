@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rumeysa — PhD Candidate, Concordia University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Rumeysa</a>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="eyebrow">Gaze → Point → Select</span>
+      <h1>Rumeysa</h1>
+      <p class="role">PhD Candidate, Computer Science — Concordia University<br>EXIT Lab · Advisor: Dr. A. U. Batmaz</p>
+      <p class="tagline">I research how people point, select, and disambiguate targets in dense, occluded virtual environments — with a focus on hands-free and gaze-driven 3D interaction.</p>
+      <div class="cta-row">
+        <a href="research.html" class="btn primary">View research</a>
+        <a href="cv.html" class="btn ghost">Download CV</a>
+      </div>
+    </div>
+  </div>
+  <div class="target-field" id="target-field"></div>
+</section>
+
+<section class="block container">
+  <h2>Currently</h2>
+  <div class="target-grid">
+    <div class="target-card">
+      <div class="crosshair"></div>
+      <span class="status"><span class="tag violet">In progress</span></span>
+      <h3>Hands-free 3D target selection</h3>
+      <p>Designing and running a study comparing gaze-based pointing against several disambiguation technique families in dense, occluded VR scenes — heading toward a CHI 2027 submission.</p>
+    </div>
+    <div class="target-card">
+      <div class="crosshair"></div>
+      <span class="status"><span class="tag">Teaching</span></span>
+      <h3>TA, COMP 376 & COMP 476</h3>
+      <p>Supporting coursework at Concordia while continuing research and supervision duties at the EXIT Lab.</p>
+    </div>
+    <div class="target-card">
+      <div class="crosshair"></div>
+      <span class="status"><span class="tag hit">Funded</span></span>
+      <h3>FRQNT Doctoral Scholarship</h3>
+      <p>Doctoral research funded by the Fonds de recherche du Québec – Nature et technologies.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="left">© <span data-year></span> Rumeysa · Montréal, Canada</div>
+    <div class="links">
+      <a href="mailto:your.email@concordia.ca">Email</a>
+      <a href="#">Scholar</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<div class="reticle" id="reticle"></div>
+<script src="script.js"></script>
+</body>
+</html>

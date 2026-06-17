@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Rumeysa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .contact-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  @media (max-width:760px){ .contact-grid{ grid-template-columns: 1fr; } }
+  .contact-card { border:1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+  .contact-card h3 { font-family: var(--font-display); font-weight:700; font-size:16px; margin-bottom:10px; }
+  .contact-card p { color: var(--muted); font-size:14.5px; line-height:1.6; }
+  .contact-card a.value { display:inline-block; margin-top:12px; font:600 14px/1 var(--font-body); color: var(--violet); }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>Rumeysa</a>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header container">
+  <span class="eyebrow">Contact</span>
+  <h1>Let's talk research.</h1>
+  <p class="lede">Reach out about collaborations, my work, or anything related to the EXIT Lab.</p>
+</header>
+
+<section class="block container">
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <p>The fastest way to reach me — happy to talk research, collaboration, or teaching.</p>
+      <a class="value" href="mailto:your.email@concordia.ca">your.email@concordia.ca</a>
+    </div>
+    <div class="contact-card">
+      <h3>Google Scholar</h3>
+      <p>Full publication record and citation metrics.</p>
+      <a class="value" href="#">scholar.google.com/[your-id]</a>
+    </div>
+    <div class="contact-card">
+      <h3>GitHub</h3>
+      <p>Code for select research projects and tools.</p>
+      <a class="value" href="#">github.com/[your-handle]</a>
+    </div>
+    <div class="contact-card">
+      <h3>Lab</h3>
+      <p>EXIT Lab, Concordia University — Department of Computer Science and Software Engineering.</p>
+      <a class="value" href="#">Lab website →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="left">© <span data-year></span> Rumeysa · Montréal, Canada</div>
+    <div class="links">
+      <a href="mailto:your.email@concordia.ca">Email</a>
+      <a href="#">Scholar</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<div class="reticle" id="reticle"></div>
+<script src="script.js"></script>
+</body>
+</html>
