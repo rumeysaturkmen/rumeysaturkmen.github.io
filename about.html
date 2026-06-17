@@ -8,6 +8,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .about-hero { display:flex; align-items:flex-start; gap:44px; flex-wrap:wrap; }
+  .about-photo-wrap {
+    position: relative;
+    width: 168px; height: 168px;
+    border-radius: 50%;
+    padding: 6px;
+    border: 1.5px solid var(--violet-line);
+    flex-shrink: 0;
+  }
+  .about-photo-wrap::before {
+    content: ''; position: absolute; top: -16px; left: 50%;
+    width: 1.5px; height: 10px; background: var(--violet); transform: translateX(-50%);
+  }
+  .about-photo-wrap::after {
+    content: ''; position: absolute; left: -16px; top: 50%;
+    width: 10px; height: 1.5px; background: var(--violet); transform: translateY(-50%);
+  }
+  .about-photo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+  .about-hero-text { flex: 1; min-width: 260px; }
+  @media (max-width: 600px) {
+    .about-hero { justify-content: center; text-align: center; }
+    .about-hero-text { text-align: left; }
+  }
+</style>
 </head>
 <body>
 
@@ -27,9 +52,16 @@
 </nav>
 
 <header class="page-header container">
-  <span class="eyebrow">About</span>
-  <h1>A short introduction.</h1>
-  <p class="lede">PhD candidate at Concordia University, working on how people interact in 3D — without always needing their hands.</p>
+  <div class="about-hero">
+    <div class="about-photo-wrap">
+      <img src="rumeysa-photo.jpg" alt="Rumeysa Turkmen" class="about-photo">
+    </div>
+    <div class="about-hero-text">
+      <span class="eyebrow">About</span>
+      <h1>A short introduction.</h1>
+      <p class="lede">PhD candidate at Concordia University, working on how people interact in 3D — without always needing their hands.</p>
+    </div>
+  </div>
 </header>
 
 <section class="block container">
