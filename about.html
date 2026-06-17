@@ -8,31 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  .about-hero { display:flex; align-items:flex-start; gap:44px; flex-wrap:wrap; }
-  .about-photo-wrap {
-    position: relative;
-    width: 168px; height: 168px;
-    border-radius: 50%;
-    padding: 6px;
-    border: 1.5px solid var(--violet-line);
-    flex-shrink: 0;
-  }
-  .about-photo-wrap::before {
-    content: ''; position: absolute; top: -16px; left: 50%;
-    width: 1.5px; height: 10px; background: var(--violet); transform: translateX(-50%);
-  }
-  .about-photo-wrap::after {
-    content: ''; position: absolute; left: -16px; top: 50%;
-    width: 10px; height: 1.5px; background: var(--violet); transform: translateY(-50%);
-  }
-  .about-photo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
-  .about-hero-text { flex: 1; min-width: 260px; }
-  @media (max-width: 600px) {
-    .about-hero { justify-content: center; text-align: center; }
-    .about-hero-text { text-align: left; }
-  }
-</style>
 </head>
 <body>
 
@@ -52,14 +27,14 @@
 </nav>
 
 <header class="page-header container">
-  <div class="about-hero">
-    <div class="about-photo-wrap">
-      <img src="rumeysa-photo.jpg" alt="Rumeysa Turkmen" class="about-photo">
+  <div class="bio-row">
+    <div class="photo-frame">
+      <img src="rumeysa-photo.jpg" alt="Rumeysa Turkmen">
     </div>
-    <div class="about-hero-text">
+    <div class="bio-text">
       <span class="eyebrow">About</span>
       <h1>A short introduction.</h1>
-      <p class="lede">PhD candidate at Concordia University, working on how people interact in 3D environments.</p>
+      <p class="lede">PhD candidate at Concordia University, working on how people interact in 3D — without always needing their hands.</p>
     </div>
   </div>
 </header>
@@ -67,7 +42,7 @@
 <section class="block container">
   <h2>What I work on</h2>
   <p style="max-width:640px; color:var(--muted); font-size:15.5px; line-height:1.7;">
-    I'm a PhD candidate in Computer Science at Concordia University, admitted directly into the doctoral program on the strength of my undergraduate research record. I work in the EXIT Lab under Dr. Anil Ufuk Batmaz, where my research focuses on controller-free interaction — eye-gaze and voice — for 3D selection and manipulation in virtual and augmented reality.
+    I'm a PhD candidate in Computer Science at Concordia University, admitted directly into the doctoral program on the strength of my undergraduate research record. I work in the EXIT Lab under Dr. Anil Ufuk Batmaz, where I design effective user interfaces and interaction methods across different modalities — including eye-gaze and voice — for virtual and augmented reality.
   </p>
   <p style="max-width:640px; color:var(--muted); font-size:15.5px; line-height:1.7; margin-top:16px;">
     My path here started during my undergraduate degree in Electrical and Electronics Engineering at Kadir Has University in Istanbul, where I worked at HapLab researching eye-gaze behavior and haptic interaction. That led to a research internship at TUBITAK studying eye-gaze input for VR, and a term as a visiting research student at Dalhousie University's VERTEX Lab, working on 3D pointing and sketching in VR. Those experiences shaped the questions I'm still chasing today.
@@ -77,7 +52,7 @@
 <section class="block container">
   <h2>Outside the lab</h2>
   <p style="max-width:640px; color:var(--muted); font-size:15.5px; line-height:1.7;">
-    I like photography! 
+    [Optional — a line or two about interests outside research, if you'd like the page to feel a little more personal. Totally up to you whether to include this section at all.]
   </p>
 </section>
 
