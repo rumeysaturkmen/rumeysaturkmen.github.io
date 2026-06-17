@@ -512,9 +512,8 @@ footer.site-footer {
 
 .target-field {
   position: absolute;
-  right: 4vw;
-  top: 0; bottom: 0;
-  width: 44%;
+  inset: 0;
+  z-index: 1;
   pointer-events: none;
 }
 .tf-dot {

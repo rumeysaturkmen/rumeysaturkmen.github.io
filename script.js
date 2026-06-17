@@ -41,12 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var field = document.getElementById('target-field');
   if (field) {
     var pts = [
-      { x: 28, y: 16, hit: false },
-      { x: 64, y: 28, hit: false },
-      { x: 48, y: 54, hit: true, label: 'selected' },
-      { x: 18, y: 68, hit: false },
-      { x: 78, y: 60, hit: false },
-      { x: 38, y: 84, hit: false }
+      { x: 8, y: 12, hit: false },
+      { x: 90, y: 10, hit: false },
+      { x: 5, y: 50, hit: false },
+      { x: 95, y: 42, hit: false },
+      { x: 12, y: 88, hit: false },
+      { x: 88, y: 90, hit: false },
+      { x: 50, y: 8, hit: false },
+      { x: 86, y: 22, hit: true, label: 'selected' }
     ];
     pts.forEach(function (p) {
       var d = document.createElement('div');
