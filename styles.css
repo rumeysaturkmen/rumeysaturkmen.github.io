@@ -462,6 +462,14 @@ footer.site-footer {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
 }
 
+.text-link {
+  color: var(--violet);
+  text-decoration: underline;
+  text-decoration-color: var(--violet-line);
+  text-underline-offset: 2px;
+}
+.text-link:hover { text-decoration-color: var(--violet); }
+
 /* ---------------- Video embed ---------------- */
 
 .video-wrap { max-width: 720px; }
