@@ -581,6 +581,7 @@ footer.site-footer {
 .eyebrow.short-text { display: none; }
 
 @media (max-width: 600px) {
+  .container { padding: 0 24px; }
   .eyebrow.full-text { display: none; }
   .eyebrow.short-text { display: inline-block; }
   .hero {
