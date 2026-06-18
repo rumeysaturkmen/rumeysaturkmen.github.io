@@ -577,3 +577,19 @@ footer.site-footer {
   .cv-item { flex-direction: column; gap: 4px; }
   .pub-entry { flex-direction: column; gap: 6px; }
 }
+
+.eyebrow.short-text { display: none; }
+
+@media (max-width: 600px) {
+  .eyebrow.full-text { display: none; }
+  .eyebrow.short-text { display: inline-block; }
+  .hero {
+    min-height: auto;
+    padding: 56px 0 32px;
+  }
+  .hero h1 { font-size: 38px; }
+  .hero .role { margin-top: 12px; font-size: 14.5px; }
+  .hero .tagline { margin-top: 16px; font-size: 15.5px; }
+  .hero .cta-row { margin-top: 24px; }
+  .photo-frame.lg { width: 140px; height: 140px; }
+}
