@@ -519,9 +519,9 @@ footer.site-footer {
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(46px, 7vw, 84px);
+  font-size: clamp(36px, 5vw, 58px);
   letter-spacing: -0.02em;
-  line-height: 1;
+  line-height: 1.05;
 }
 
 .hero .role {
