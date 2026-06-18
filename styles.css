@@ -572,7 +572,6 @@ footer.site-footer {
 }
 
 @media (max-width: 760px) {
-  .target-field { display: none; }
   .page-header { padding: 12vh 0 6vh; }
   .cv-item { flex-direction: column; gap: 4px; }
   .pub-entry { flex-direction: column; gap: 6px; }
@@ -592,5 +591,6 @@ footer.site-footer {
   .hero .role { margin-top: 12px; font-size: 14.5px; }
   .hero .tagline { margin-top: 16px; font-size: 15.5px; }
   .hero .cta-row { margin-top: 24px; }
-  .photo-frame.lg { width: 140px; height: 140px; }
+  .photo-frame.lg { width: 140px; height: 140px; order: -1; margin-bottom: 8px; }
+  .hero .hero-content { order: 2; }
 }
