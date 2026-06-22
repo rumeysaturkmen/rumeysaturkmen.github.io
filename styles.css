@@ -264,7 +264,13 @@ section.block:last-of-type { border-bottom: none; }
 }
 
 /* ---------------- Publications ---------------- */
-
+.publication-note {
+  max-width: 820px;
+  margin: 0 0 28px;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
 .pub-entry {
   display: flex;
   gap: 22px;
